@@ -1,0 +1,110 @@
+/* Contact Section Styling */
+.contact-section {
+    background-color: #c30047;
+    padding: 10px 0;
+}
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none; /* Removes underline */
+}
+
+.icon {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.vertical-line {
+    border-left: 1px solid #ffffff;
+    height: 24px;
+}
+
+.social-item {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none; /* Removes underline */
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-weight: 700;
+    color: #c30047;
+    font-size: 24px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-decoration: none; /* Removes underline */
+    border-bottom: none; /* Removes underline or border bottom */
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; /* Removes underline */
+    border-bottom: none; /* Ensures no border bottom */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c30047;
+}
+
+.button-css {
+    border: 2px solid #c30047;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #c30047;
+    font-weight: 600;
+    text-decoration: none; /* Removes underline */
+}
+
+.button-css:hover {
+    background-color: #c30047;
+    color: #ffffff;
+}
+
+.nav-link, .contact-link, .social-item {
+    text-decoration: none; /* Removes underline */
+    border-bottom: none; /* Ensures no border bottom */
+}
+
+.nav-link:hover, .contact-link:hover, .social-item:hover {
+    text-decoration: none; /* Keeps underline removed on hover */
+    border-bottom: none; /* Keeps border bottom removed on hover */
+}
+
+@media (max-width: 768px) {
+    /* Adjust navbar brand font size for smaller screens */
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* Stack contact info vertically on smaller screens */
+    .contact-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .contact-info, .social-icons {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Center the navbar items */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: #c30047;
+    }
+
+    /* Adjust button size on mobile */
+    .button-css {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .contact-section{
+        display: none;
+    }
+}

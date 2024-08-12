@@ -1,0 +1,164 @@
+/* Contact Section Styling */
+.contact-section {
+    background-color: #c30047;
+    padding: 10px 0;
+  }
+  
+  .contact-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .icon {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .vertical-line {
+    border-left: 1px solid #ffffff;
+    height: 24px;
+  }
+  
+  .social-item {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  /* Navbar Styling */
+  .navbar-brand {
+    font-weight: 700;
+    color: #c30047;
+    font-size: 24px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #c30047;
+  }
+  
+  .button-css {
+    border: 2px solid #c30047;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #c30047;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .button-css:hover {
+    background-color: #c30047;
+    color: #ffffff;
+  }
+  .nav-link, .contact-link {
+    text-decoration: none; /* Removes underline */
+}
+
+.nav-link:hover, .contact-link:hover {
+    text-decoration: none; /* Keeps underline removed on hover */
+}
+@media (max-width: 768px) {
+    /* Adjust navbar brand font size for smaller screens */
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* Stack contact info vertically on smaller screens */
+    .contact-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info, .social-icons {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Center the navbar items */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: #c30047;
+    }
+
+    /* Adjust button size on mobile */
+    .button-css {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+/* slider style start here  */
+/* Full height for the carousel and images */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.image-container {
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+}
+
+.carousel-image {
+    object-fit: cover; /* Cover the entire area without distortion */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+.custom-caption {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: left;
+    max-width: 90%;
+}
+
+.slider-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.slider-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .custom-caption {
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+
+    .slider-title {
+        font-size: 32px; /* Adjust text size for smaller screens */
+    }
+
+    .slider-subtitle {
+        font-size: 16px; /* Adjust subtext size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-title {
+        font-size: 28px; /* Further adjust text size for very small screens */
+    }
+
+    .slider-subtitle {
+        font-size: 14px; /* Further adjust subtext size for very small screens */
+    }
+}

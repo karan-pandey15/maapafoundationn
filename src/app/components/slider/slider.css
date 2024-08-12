@@ -1,0 +1,100 @@
+/* General Carousel Styling */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.image-container {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height for large screens */
+}
+
+.carousel-image {
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    position: relative;
+}
+
+/* Darker gradient overlay for the images */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+/* Custom caption styling */
+.custom-caption {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    text-align: left;
+    max-width: 90%;
+    z-index: 2; /* Ensure it sits above the gradient */
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.slider-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.slider-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Animation for text appearance */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item,
+    .image-container {
+        height: 70vh; /* 50% of the viewport height */
+    }
+
+    .custom-caption {
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+
+    .slider-title {
+        font-size: 32px; /* Adjust text size for smaller screens */
+    }
+
+    .slider-subtitle {
+        font-size: 16px; /* Adjust subtext size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-title {
+        font-size: 28px; /* Further adjust text size for very small screens */
+    }
+
+    .slider-subtitle {
+        font-size: 14px; /* Further adjust subtext size for very small screens */
+    }
+}

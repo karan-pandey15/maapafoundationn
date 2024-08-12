@@ -1,0 +1,31 @@
+body {
+  background-color: #f8f9fa; /* Matches the background color */
+}
+
+.navbar {
+  background-color: #f8f9fa; /* Light gray background for the navbar */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #d9534f; /* Maapa Foundation brand color */
+}
+
+.nav-link {
+  color: #555; /* Default link color */
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #d9534f; /* Hover color matching brand color */
+}
+
+.navbar .btn-danger {
+  background-color: #d9534f;
+  border: none;
+}
+
+.navbar .btn-danger:hover {
+  background-color: #c9302c; /* Slightly darker on hover */
+}
