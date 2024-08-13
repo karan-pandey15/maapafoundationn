@@ -10,7 +10,7 @@ const Banner = () => {
           Inspire change and support our mission. Your donation makes a real impact.
         </h2>
         <p className="banner-subtitle">Click to donate now!</p>
-        <a href="#" className="banner-button">
+        <a href="/" className="banner-button">
           Donate Now
         </a>
       </div>

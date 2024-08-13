@@ -15,22 +15,22 @@ const Footer = () => {
         <div className="footer-section links">
           <h4>Pages</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Programs</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li><a href="/">Contact Us</a></li>
           </ul>
         </div>
 
         <div className="footer-section links">
           <h4>Important</h4>
           <ul>
-            <li><a href="#">Donate Now</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="/">Donate Now</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Disclaimer</a></li>
+            <li><a href="/">FAQs</a></li>
           </ul>
         </div>
 

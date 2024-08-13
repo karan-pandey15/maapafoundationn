@@ -38,7 +38,7 @@ const AboutSection = () => {
             ensuring that no one is left behind. Join us in making a difference
             and building a brighter future for all.
           </p>
-          <a href="/read-more" className="read-more-link">Read More</a>
+          <a href="/" className="read-more-link">Read More</a>
         </div>
       </div>
     </section>
